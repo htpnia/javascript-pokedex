@@ -11,6 +11,12 @@ const pokeApi = {}
         pokemon.type = type
 
         pokemon.photo = pokeDetail.sprites.other.dream_world.front_default;
+        const abilities = pokeDetail.abilities.map((abilitySlot) => abilitySlot.ability.name);
+        const [ability] = abilities
+        pokemon.ability = ability
+        pokemon.abilities = abilities
+        pokemon.height = pokeDetail.height
+        pokemon.weight = pokeDetail.weight
 
         return pokemon
     }

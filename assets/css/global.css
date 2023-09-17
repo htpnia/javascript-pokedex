@@ -12,8 +12,8 @@ body {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #C52F2F;
-    opacity: 0.95;
+    background-color: #d63e3e;
+    opacity: 1;
 }
 
 @media screen and (min-width: 992px) {
