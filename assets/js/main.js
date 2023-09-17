@@ -10,13 +10,14 @@ function loadPokemonItems(offset, limit) {
             <li class="pokemon ${pokemon.type}">
                 <span class="number">#${pokemon.number}</span>
                 <span class="name">${pokemon.name}</span>
+                <button class="modalBtn" type="button">i</button>
                 <div class="detail">
                     <ol class="types">
                         ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                     </ol>
                     <img src="${pokemon.photo}"
                          alt="${pokemon.name}">
-                <button class="modalBtn" type="button">i</button>
+                
                 <div class="modal hidden">
                 <div class="modal-content ${pokemon.type}">
                 <span class="closeBtn">&times;</span>
